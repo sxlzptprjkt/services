@@ -2,7 +2,7 @@
 
 <figure><img src="../../.gitbook/assets/planq.png" alt=""><figcaption></figcaption></figure>
 
-**Network:** Mainnet | **Chain ID:** planq_7070-2 | **Node Version:** v1.0.3
+**Network:** Mainnet | **Chain ID:** planq_7070-2 | **Version:** v1.0.3
 
 {% hint style="info" %}
 Planq's EVM infrastructure means that Ethereum-based smart contracts will run immediately on the Planq platform.
