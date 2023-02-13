@@ -75,7 +75,9 @@ harkonnend tx staking create-validator \
 --commission-max-change-rate=0.01 \
 --min-self-delegation=1000000 \
 --from=wallet \
---fees=500uhar
+--fees="1000uhar" \
+--gas="1000000" \
+--gas-adjustment="1.15"
 ```
 
 #### Edit existing validator
@@ -89,13 +91,15 @@ harkonnend tx staking edit-validator \
 --chain-id=harkonnen-1 \
 --commission-rate=0.05 \
 --from=wallet \
---fees=500uhar
+--fees="1000uhar" \
+--gas="1000000" \
+--gas-adjustment="1.15"
 ```
 
 #### Unjail validator
 
 ```
-harkonnend tx slashing unjail --broadcast-mode=block --from wallet --chain-id harkonnen-1 --fees=500uhar
+harkonnend tx slashing unjail --broadcast-mode=block --from wallet --chain-id harkonnen-1 --fees="1000uhar" --gas="1000000" --gas-adjustment="1.15"
 ```
 
 #### Jail reason
@@ -127,43 +131,43 @@ harkonnend q staking validator $(harkonnend keys show wallet --bech val -a)
 #### Withdraw rewards from all validators
 
 ```
-harkonnend tx distribution withdraw-all-rewards --from wallet --chain-id harkonnen-1 --fees=500uhar
+harkonnend tx distribution withdraw-all-rewards --from wallet --chain-id harkonnen-1 --fees="1000uhar" --gas="1000000" --gas-adjustment="1.15"
 ```
 
 #### Withdraw commission and rewards from your validator
 
 ```
-harkonnend tx distribution withdraw-rewards $(harkonnend keys show wallet --bech val -a) --commission --from wallet --chain-id harkonnen-1 --fees=500uhar
+harkonnend tx distribution withdraw-rewards $(harkonnend keys show wallet --bech val -a) --commission --from wallet --chain-id harkonnen-1 --fees="1000uhar" --gas="1000000" --gas-adjustment="1.15"
 ```
 
 #### Delegate tokens to yourself
 
 ```
-harkonnend tx staking delegate $(harkonnend keys show wallet --bech val -a) 1000000uhar --from wallet --chain-id harkonnen-1 --fees=500uhar
+harkonnend tx staking delegate $(harkonnend keys show wallet --bech val -a) 1000000uhar --from wallet --chain-id harkonnen-1 --fees="1000uhar" --gas="1000000" --gas-adjustment="1.15"
 ```
 
 #### Delegate tokens to validator
 
 ```
-harkonnend tx staking delegate <TO_VALOPER_ADDRESS> 1000000uhar --from wallet --chain-id harkonnen-1 --fees=500uhar
+harkonnend tx staking delegate <TO_VALOPER_ADDRESS> 1000000uhar --from wallet --chain-id harkonnen-1 --fees="1000uhar" --gas="1000000" --gas-adjustment="1.15"
 ```
 
 #### Redelegate tokens to another validator
 
 ```
-harkonnend tx staking redelegate $(harkonnend keys show wallet --bech val -a) <TO_VALOPER_ADDRESS> 1000000uhar --from wallet --chain-id harkonnen-1 --fees=500uhar
+harkonnend tx staking redelegate $(harkonnend keys show wallet --bech val -a) <TO_VALOPER_ADDRESS> 1000000uhar --from wallet --chain-id harkonnen-1 --fees="1000uhar" --gas="1000000" --gas-adjustment="1.15"
 ```
 
 #### Unbond tokens from your validator
 
 ```
-harkonnend tx staking unbond $(harkonnend keys show wallet --bech val -a) 1000000uhar --from wallet --chain-id harkonnen-1 --fees=500uhar
+harkonnend tx staking unbond $(harkonnend keys show wallet --bech val -a) 1000000uhar --from wallet --chain-id harkonnen-1 --fees="1000uhar" --gas="1000000" --gas-adjustment="1.15"
 ```
 
 #### Send tokens to the wallet
 
 ```
-harkonnend tx bank send wallet <TO_WALLET_ADDRESS> 1000000uhar --from wallet --chain-id harkonnen-1 --fees=500uhar
+harkonnend tx bank send wallet <TO_WALLET_ADDRESS> 1000000uhar --from wallet --chain-id harkonnen-1 --fees="1000uhar" --gas="1000000" --gas-adjustment="1.15"
 ```
 
 ## Governance
@@ -183,25 +187,25 @@ harkonnend query gov proposal 1
 #### Vote 'Yes'
 
 ```
-harkonnend tx gov vote 1 yes --from wallet --chain-id harkonnen-1 --fees=500uhar
+harkonnend tx gov vote 1 yes --from wallet --chain-id harkonnen-1 --fees="1000uhar" --gas="1000000" --gas-adjustment="1.15"
 ```
 
 #### Vote 'No'
 
 ```
-harkonnend tx gov vote 1 no --from wallet --chain-id harkonnen-1 --fees=500uhar
+harkonnend tx gov vote 1 no --from wallet --chain-id harkonnen-1 --fees="1000uhar" --gas="1000000" --gas-adjustment="1.15"
 ```
 
 #### Vote 'Abstain'
 
 ```
-harkonnend tx gov vote 1 abstain --from wallet --chain-id harkonnen-1 --fees=500uhar
+harkonnend tx gov vote 1 abstain --from wallet --chain-id harkonnen-1 --fees="1000uhar" --gas="1000000" --gas-adjustment="1.15"
 ```
 
 #### Vote 'NoWithVeto'
 
 ```
-harkonnend tx gov vote 1 nowithveto --from wallet --chain-id harkonnen-1 --fees=500uhar
+harkonnend tx gov vote 1 nowithveto --from wallet --chain-id harkonnen-1 --fees="1000uhar" --gas="1000000" --gas-adjustment="1.15"
 ```
 
 ## Utility
@@ -210,8 +214,8 @@ harkonnend tx gov vote 1 nowithveto --from wallet --chain-id harkonnen-1 --fees=
 
 ```
 CUSTOM_PORT=10
-sed -i -e "s%^proxy_app = \"tcp://127.0.0.1:26658\"%proxy_app = \"tcp://127.0.0.1:${CUSTOM_PORT}658\"%; s%^laddr = \"tcp://127.0.0.1:26657\"%laddr = \"tcp://127.0.0.1:${CUSTOM_PORT}657\"%; s%^pprof_laddr = \"localhost:6060\"%pprof_laddr = \"localhost:${CUSTOM_PORT}060\"%; s%^laddr = \"tcp://0.0.0.0:26656\"%laddr = \"tcp://0.0.0.0:${CUSTOM_PORT}656\"%; s%^prometheus_listen_addr = \":26660\"%prometheus_listen_addr = \":${CUSTOM_PORT}660\"%" $HOME/.harkonnend/config/config.toml
-sed -i -e "s%^address = \"tcp://0.0.0.0:1317\"%address = \"tcp://0.0.0.0:${CUSTOM_PORT}317\"%; s%^address = \":8080\"%address = \":${CUSTOM_PORT}080\"%; s%^address = \"0.0.0.0:9090\"%address = \"0.0.0.0:${CUSTOM_PORT}090\"%; s%^address = \"0.0.0.0:9091\"%address = \"0.0.0.0:${CUSTOM_PORT}091\"%" $HOME/.harkonnend/config/config.toml
+sed -i -e "s%^proxy_app = \"tcp://127.0.0.1:26658\"%proxy_app = \"tcp://127.0.0.1:${CUSTOM_PORT}658\"%; s%^laddr = \"tcp://127.0.0.1:26657\"%laddr = \"tcp://127.0.0.1:${CUSTOM_PORT}657\"%; s%^pprof_laddr = \"localhost:6060\"%pprof_laddr = \"localhost:${CUSTOM_PORT}060\"%; s%^laddr = \"tcp://0.0.0.0:26656\"%laddr = \"tcp://0.0.0.0:${CUSTOM_PORT}656\"%; s%^prometheus_listen_addr = \":26660\"%prometheus_listen_addr = \":${CUSTOM_PORT}660\"%" $HOME/.harkonnen/config/config.toml
+sed -i -e "s%^address = \"tcp://0.0.0.0:1317\"%address = \"tcp://0.0.0.0:${CUSTOM_PORT}317\"%; s%^address = \":8080\"%address = \":${CUSTOM_PORT}080\"%; s%^address = \"0.0.0.0:9090\"%address = \"0.0.0.0:${CUSTOM_PORT}090\"%; s%^address = \"0.0.0.0:9091\"%address = \"0.0.0.0:${CUSTOM_PORT}091\"%" $HOME/.harkonnen/config/config.toml
 ```
 
 #### Update Indexer
@@ -219,13 +223,13 @@ sed -i -e "s%^address = \"tcp://0.0.0.0:1317\"%address = \"tcp://0.0.0.0:${CUSTO
 ##### Disable indexer
 
 ```
-sed -i -e 's|^indexer *=.*|indexer = "null"|' $HOME/.harkonnend/config/config.toml
+sed -i -e 's|^indexer *=.*|indexer = "null"|' $HOME/.harkonnen/config/config.toml
 ```
 
 ##### Enable indexer
 
 ```
-sed -i -e 's|^indexer *=.*|indexer = "kv"|' $HOME/.harkonnend/config/config.toml
+sed -i -e 's|^indexer *=.*|indexer = "kv"|' $HOME/.harkonnen/config/config.toml
 ```
 
 #### Update pruning
@@ -236,7 +240,7 @@ sed -i \
   -e 's|^pruning-keep-recent *=.*|pruning-keep-recent = "100"|' \
   -e 's|^pruning-keep-every *=.*|pruning-keep-every = "0"|' \
   -e 's|^pruning-interval *=.*|pruning-interval = "19"|' \
-  $HOME/.harkonnend/config/config.toml
+  $HOME/.harkonnen/config/config.toml
 ```
 
 ## Maintenance
@@ -256,7 +260,7 @@ harkonnend status 2>&1 | jq .SyncInfo
 #### Get node peer
 
 ```
-echo $(harkonnend tendermint show-node-id)'@'$(curl -s ifconfig.me)':'$(cat $HOME/.harkonnend/config/config.toml | sed -n '/Address to listen for incoming connection/{n;p;}' | sed 's/.*://; s/".*//')
+echo $(harkonnend tendermint show-node-id)'@'$(curl -s ifconfig.me)':'$(cat $HOME/.harkonnen/config/config.toml | sed -n '/Address to listen for incoming connection/{n;p;}' | sed 's/.*://; s/".*//')
 ```
 
 #### Check if validator key is correct
@@ -274,19 +278,19 @@ curl -sS http://localhost:02657/net_info | jq -r '.result.peers[] | "\(.node_inf
 #### Set minimum gas price
 
 ```
-sed -i -e "s/^minimum-gas-prices *=.*/minimum-gas-prices = \"0uhar\"/" $HOME/.harkonnend/config/config.toml
+sed -i -e "s/^minimum-gas-prices *=.*/minimum-gas-prices = \"0uhar\"/" $HOME/.harkonnen/config/config.toml
 ```
 
 #### Enable prometheus
 
 ```
-sed -i -e "s/prometheus = false/prometheus = true/" $HOME/.harkonnend/config/config.toml
+sed -i -e "s/prometheus = false/prometheus = true/" $HOME/.harkonnen/config/config.toml
 ```
 
 #### Reset chain data
 
 ```
-harkonnend tendermint unsafe-reset-all --home $HOME/.harkonnend --keep-addr-book
+harkonnend tendermint unsafe-reset-all --home $HOME/.harkonnen --keep-addr-book
 ```
 
 #### Remove node
@@ -303,7 +307,7 @@ sudo rm -f /etc/systemd/system/harkonnend.service
 sudo systemctl daemon-reload
 rm -f $(which harkonnend)
 rm -rf $HOME/.harkonnen
-sed -i '/harkonnen_/d' ~/.bash_profile
+sed -i '/HARKONNEN_/d' ~/.bash_profile
 ```
 
 ## Service Management

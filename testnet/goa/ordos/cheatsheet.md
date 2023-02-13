@@ -75,7 +75,9 @@ ordosd tx staking create-validator \
 --commission-max-change-rate=0.01 \
 --min-self-delegation=1000000 \
 --from=wallet \
---fees=500uord
+--fees="1000uord" \
+--gas="1000000" \
+--gas-adjustment="1.15"
 ```
 
 #### Edit existing validator
@@ -89,13 +91,15 @@ ordosd tx staking edit-validator \
 --chain-id=ordos-1 \
 --commission-rate=0.05 \
 --from=wallet \
---fees=500uord
+--fees="1000uord" \
+--gas="1000000" \
+--gas-adjustment="1.15"
 ```
 
 #### Unjail validator
 
 ```
-ordosd tx slashing unjail --broadcast-mode=block --from wallet --chain-id ordos-1 --fees=500uord
+ordosd tx slashing unjail --broadcast-mode=block --from wallet --chain-id ordos-1 --fees="1000uord" --gas="1000000" --gas-adjustment="1.15"
 ```
 
 #### Jail reason
@@ -127,43 +131,43 @@ ordosd q staking validator $(ordosd keys show wallet --bech val -a)
 #### Withdraw rewards from all validators
 
 ```
-ordosd tx distribution withdraw-all-rewards --from wallet --chain-id ordos-1 --fees=500uord
+ordosd tx distribution withdraw-all-rewards --from wallet --chain-id ordos-1 --fees="1000uord" --gas="1000000" --gas-adjustment="1.15"
 ```
 
 #### Withdraw commission and rewards from your validator
 
 ```
-ordosd tx distribution withdraw-rewards $(ordosd keys show wallet --bech val -a) --commission --from wallet --chain-id ordos-1 --fees=500uord
+ordosd tx distribution withdraw-rewards $(ordosd keys show wallet --bech val -a) --commission --from wallet --chain-id ordos-1 --fees="1000uord" --gas="1000000" --gas-adjustment="1.15"
 ```
 
 #### Delegate tokens to yourself
 
 ```
-ordosd tx staking delegate $(ordosd keys show wallet --bech val -a) 1000000uord --from wallet --chain-id ordos-1 --fees=500uord
+ordosd tx staking delegate $(ordosd keys show wallet --bech val -a) 1000000uord --from wallet --chain-id ordos-1 --fees="1000uord" --gas="1000000" --gas-adjustment="1.15"
 ```
 
 #### Delegate tokens to validator
 
 ```
-ordosd tx staking delegate <TO_VALOPER_ADDRESS> 1000000uord --from wallet --chain-id ordos-1 --fees=500uord
+ordosd tx staking delegate <TO_VALOPER_ADDRESS> 1000000uord --from wallet --chain-id ordos-1 --fees="1000uord" --gas="1000000" --gas-adjustment="1.15"
 ```
 
 #### Redelegate tokens to another validator
 
 ```
-ordosd tx staking redelegate $(ordosd keys show wallet --bech val -a) <TO_VALOPER_ADDRESS> 1000000uord --from wallet --chain-id ordos-1 --fees=500uord
+ordosd tx staking redelegate $(ordosd keys show wallet --bech val -a) <TO_VALOPER_ADDRESS> 1000000uord --from wallet --chain-id ordos-1 --fees="1000uord" --gas="1000000" --gas-adjustment="1.15"
 ```
 
 #### Unbond tokens from your validator
 
 ```
-ordosd tx staking unbond $(ordosd keys show wallet --bech val -a) 1000000uord --from wallet --chain-id ordos-1 --fees=500uord
+ordosd tx staking unbond $(ordosd keys show wallet --bech val -a) 1000000uord --from wallet --chain-id ordos-1 --fees="1000uord" --gas="1000000" --gas-adjustment="1.15"
 ```
 
 #### Send tokens to the wallet
 
 ```
-ordosd tx bank send wallet <TO_WALLET_ADDRESS> 1000000uord --from wallet --chain-id ordos-1 --fees=500uord
+ordosd tx bank send wallet <TO_WALLET_ADDRESS> 1000000uord --from wallet --chain-id ordos-1 --fees="1000uord" --gas="1000000" --gas-adjustment="1.15"
 ```
 
 ## Governance
@@ -183,25 +187,25 @@ ordosd query gov proposal 1
 #### Vote 'Yes'
 
 ```
-ordosd tx gov vote 1 yes --from wallet --chain-id ordos-1 --fees=500uord
+ordosd tx gov vote 1 yes --from wallet --chain-id ordos-1 --fees="1000uord" --gas="1000000" --gas-adjustment="1.15"
 ```
 
 #### Vote 'No'
 
 ```
-ordosd tx gov vote 1 no --from wallet --chain-id ordos-1 --fees=500uord
+ordosd tx gov vote 1 no --from wallet --chain-id ordos-1 --fees="1000uord" --gas="1000000" --gas-adjustment="1.15"
 ```
 
 #### Vote 'Abstain'
 
 ```
-ordosd tx gov vote 1 abstain --from wallet --chain-id ordos-1 --fees=500uord
+ordosd tx gov vote 1 abstain --from wallet --chain-id ordos-1 --fees="1000uord" --gas="1000000" --gas-adjustment="1.15"
 ```
 
 #### Vote 'NoWithVeto'
 
 ```
-ordosd tx gov vote 1 nowithveto --from wallet --chain-id ordos-1 --fees=500uord
+ordosd tx gov vote 1 nowithveto --from wallet --chain-id ordos-1 --fees="1000uord" --gas="1000000" --gas-adjustment="1.15"
 ```
 
 ## Utility

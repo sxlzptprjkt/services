@@ -14,7 +14,7 @@ description: >-
 ### (automatic)
 The auto installation include snapshots or statesync any provider.
 
-You can setup your planq validator in few minutes by using automated script below. It will prompt you to input your validator node name!
+You can setup your harkonnen validator in few minutes by using automated script below. It will prompt you to input your validator node name!
 
 {% hint style='danger' %}
 For auto installation requirements Ubuntu 20.04/22.04 LTS and root access. The rest of the **RHEL family** doesn't support it
