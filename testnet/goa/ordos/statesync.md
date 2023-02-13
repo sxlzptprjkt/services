@@ -6,7 +6,7 @@ description: >-
 
 # State Sync
 
-<figure><img src="../../.gitbook/assets/ordos.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/ordos.png" alt=""><figcaption></figcaption></figure>
 
 **Network:** Testnet | **Chain ID:** ordos-1 | **Version:** v0.0.1-goa
 

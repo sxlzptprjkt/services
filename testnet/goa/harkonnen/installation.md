@@ -6,9 +6,9 @@ description: >-
 
 # Installation
 
-<figure><img src="../../.gitbook/assets/ordos.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/harkonnen.png" alt=""><figcaption></figcaption></figure>
 
-**Network:** Testnet | **Chain ID:** ordos-1 | **Version:** v0.0.1-goa
+**Network:** Testnet | **Chain ID:** harkonnen-1 | **Version:** v0.0.1-goa
 
 ## Set up your Coreum Validator
 ### (automatic)
@@ -20,13 +20,13 @@ You can setup your planq validator in few minutes by using automated script belo
 For auto installation requirements Ubuntu 20.04/22.04 LTS and root access. The rest of the **RHEL family** doesn't support it
 {% endhint %}
 
-This version include snapshots on ordos
+This basic version start block 1 on harkonnen
 ```
-curl -sL https://raw.githubusercontent.com/sxlzptprjkt/resource/master/testnet/goa/ordos-snapshot.sh > ordos-snapshot.sh && chmod +x ordos-snapshot.sh && ./ordos-snapshot.sh
+curl -sL https://raw.githubusercontent.com/sxlzptprjkt/resource/master/testnet/goa/harkonnen/harkonnen.sh > harkonnen.sh && chmod +x harkonnen.sh && ./harkonnen.sh
 ```
-This version include statesync on ordos
+This version include statesync on harkonnen
 ```
-curl -sL https://raw.githubusercontent.com/sxlzptprjkt/resource/master/testnet/goa/ordos-statesync.sh > ordos-statesync.sh && chmod +x ordos-statesync.sh && ./ordos-statesync.sh
+curl -sL https://raw.githubusercontent.com/sxlzptprjkt/resource/master/testnet/goa/harkonnen/harkonnen-statesync.sh > harkonnen-statesync.sh && chmod +x harkonnen-statesync.sh && ./harkonnen-statesync.sh
 ```
 ## Post installation
 
