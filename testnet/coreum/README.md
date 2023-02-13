@@ -1,4 +1,4 @@
-# 🟢 coreum
+# 🟢 Coreum
 
 <figure><img src="../../.gitbook/assets/coreum.png" alt=""><figcaption></figcaption></figure>
 

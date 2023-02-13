@@ -288,7 +288,7 @@ sed -i -e "s/prometheus = false/prometheus = true/" $HOME/.planqd/config/config.
 #### Reset chain data
 
 ```
-planqd tendermint unsafe-reset-all --home --keep-addr-book
+planqd tendermint unsafe-reset-all --home $HOME/.planqd --keep-addr-book
 ```
 
 #### Remove node
@@ -301,7 +301,7 @@ Please, before proceeding with the next step! All chain data will be lost! Make 
 cd $HOME
 sudo systemctl stop planqd
 sudo systemctl disable planqd
-sudo rm /etc/systemd/system/planqd.service
+sudo rm -f /etc/systemd/system/planqd.service
 sudo systemctl daemon-reload
 rm -f $(which planqd)
 rm -rf $HOME/.core
