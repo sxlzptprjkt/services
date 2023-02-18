@@ -20,6 +20,12 @@
   * [State sync](./testnet/coreum/statesync.md)
   * [Cheat sheet](./testnet/coreum/cheatsheet.md)
 
+* [🟢 Andromeda](./testnet/andromeda/README.md)
+  * [Installation](./testnet/andromeda/installation.md)
+  * [Upgrade](./testnet/andromeda/upgrade.md)
+  * [State sync](./testnet/andromeda/statesync.md)
+  * [Cheat sheet](./testnet/andromeda/cheatsheet.md)
+
 * [🤝 Games Of Alliance](./testnet/goa/README.md)
   * [🟢 Ordos](./testnet/goa/ordos/README.md)
     * [Installation](./testnet/goa/ordos/installation.md)
