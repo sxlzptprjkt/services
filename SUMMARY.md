@@ -12,6 +12,12 @@
 * [🟢 Osmosis](./mainnet/osmosis/README.md)
   * [Installation](./mainnet/osmosis/installation.md)
 
+* [🟢 8Ball](./mainnet/8ball/README.md)
+  * [Installation](./mainnet/8ball/installation.md)
+  * [Upgrade](./mainnet/8ball/upgrade.md)
+  * [State sync](./mainnet/8ball/statesync.md)
+  * [Cheat sheet](./mainnet/8ball/cheatsheet.md)
+
 ## Testnet
 
 * [🟢 Coreum](./testnet/coreum/README.md)
