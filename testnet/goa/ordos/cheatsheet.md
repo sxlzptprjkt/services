@@ -7,7 +7,7 @@ description: >-
 
 <figure><img src="../../../.gitbook/assets/ordos.png" alt=""><figcaption></figcaption></figure>
 
-**Network:** Testnet | **Chain ID:** ordos-1 | **Version:** v0.0.1-goa
+**Network:** Testnet | **Chain ID:** ordos-1 | **Version:** v0.1.0-goa
 
 ## Key management
 

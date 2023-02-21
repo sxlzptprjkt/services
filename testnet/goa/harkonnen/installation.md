@@ -8,7 +8,7 @@ description: >-
 
 <figure><img src="../../../.gitbook/assets/harkonnen.png" alt=""><figcaption></figcaption></figure>
 
-**Network:** Testnet | **Chain ID:** harkonnen-1 | **Version:** v0.0.1-goa
+**Network:** Testnet | **Chain ID:** harkonnen-1 | **Version:** v0.1.0-goa
 
 ## Set up your Coreum Validator
 ### (automatic)

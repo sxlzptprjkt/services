@@ -6,10 +6,10 @@ Alliance is an open-source Cosmos SDK module that leverages interchain staking t
 
 | GOA | Custom Port | Chain ID | Node Version |
 | ----| ----------- | ---------| ------------ |
-| [**Ordos**](ordos/)|01|ordos-1|v0.0.1-goa|
-| [**Harkonnen**](harkonnen/) |02|harkonnen-1|v0.0.1-goa|
-| [**Corrino**](corrino/) |03|corrino-1|v0.0.1-goa|
-| [**Atreides**](atreides/) |04|atreides-1|v0.0.1-goa|
+| [**Ordos**](ordos/)|01|ordos-1|v0.1.0-goa|
+| [**Harkonnen**](harkonnen/) |02|harkonnen-1|v0.1.0-goa|
+| [**Corrino**](corrino/) |03|corrino-1|v0.1.0-goa|
+| [**Atreides**](atreides/) |04|atreides-1|v0.1.0-goa|
 
 ## Ordos
 

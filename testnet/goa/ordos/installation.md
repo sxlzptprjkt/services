@@ -8,7 +8,7 @@ description: >-
 
 <figure><img src="../../../.gitbook/assets/ordos.png" alt=""><figcaption></figcaption></figure>
 
-**Network:** Testnet | **Chain ID:** ordos-1 | **Version:** v0.0.1-goa
+**Network:** Testnet | **Chain ID:** ordos-1 | **Version:** v0.1.0-goa
 
 ## Set up your Coreum Validator
 ### (automatic)
@@ -20,9 +20,9 @@ You can setup your ordos validator in few minutes by using automated script belo
 For auto installation requirements Ubuntu 20.04/22.04 LTS and root access. The rest of the **RHEL family** doesn't support it
 {% endhint %}
 
-This version include snapshots on ordos
+This basic version start block 1 on ordos
 ```
-curl -sL https://raw.githubusercontent.com/sxlzptprjkt/resource/master/testnet/goa/ordos/ordos-snapshot.sh > ordos-snapshot.sh && chmod +x ordos-snapshot.sh && ./ordos-snapshot.sh
+curl -sL https://raw.githubusercontent.com/sxlzptprjkt/resource/master/testnet/goa/ordos/ordos.sh > ordos.sh && chmod +x ordos.sh && ./ordos.sh
 ```
 This version include statesync on ordos
 ```

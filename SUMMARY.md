@@ -49,3 +49,4 @@
     * [Installation](./testnet/goa/atreides/installation.md)
     * [State sync](./testnet/goa/atreides/statesync.md)
     * [Cheat sheet](./testnet/goa/atreides/cheatsheet.md)
+  * [🛠 Upgrade](./testnet/goa/upgrade.md)

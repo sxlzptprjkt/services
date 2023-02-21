@@ -2,7 +2,7 @@
 
 <figure><img src="../../../.gitbook/assets/harkonnen.png" alt=""><figcaption></figcaption></figure>
 
-**Network:** Testnet | **Chain ID:** harkonnen-1 | **Version:** v0.0.1-goa
+**Network:** Testnet | **Chain ID:** harkonnen-1 | **Version:** v0.1.0-goa
 
 {% hint style="info" %}
 Alliance is an open-source Cosmos SDK module that leverages interchain staking to form economic alliances among blockchains. By boosting the economic activity across Cosmos chains through creating bilateral, mutually beneficial alliances, Alliance aims to give rise to a new wave of innovation, user adoption, and cross-chain collaboration.

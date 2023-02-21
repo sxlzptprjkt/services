@@ -8,7 +8,7 @@ description: >-
 
 <figure><img src="../../../.gitbook/assets/ordos.png" alt=""><figcaption></figcaption></figure>
 
-**Network:** Testnet | **Chain ID:** ordos-1 | **Version:** v0.0.1-goa
+**Network:** Testnet | **Chain ID:** ordos-1 | **Version:** v0.1.0-goa
 
 {% hint style="info" %}
 State Sync allows a new node to join the network by fetching a snapshot of the application state at a recent height instead of fetching and replaying all historical blocks. Since the application state is generally much smaller than the blocks, and restoring it is much faster than replaying blocks, this can reduce the time to sync with the network from days to minutes.
