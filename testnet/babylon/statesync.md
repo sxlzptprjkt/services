@@ -6,9 +6,9 @@ description: >-
 
 # State Sync
 
-<figure><img src="../../.gitbook/assets/andromeda.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/babylon.png" alt=""><figcaption></figcaption></figure>
 
-**Network:** Testnet | **Chain ID:** galileo-3 | **Version:** galileo-3-v1.1.0-beta1
+**Network:** Testnet | **Chain ID:** bbn-test1 | **Version:** v0.5.0
 
 {% hint style="info" %}
 State Sync allows a new node to join the network by fetching a snapshot of the application state at a recent height instead of fetching and replaying all historical blocks. Since the application state is generally much smaller than the blocks, and restoring it is much faster than replaying blocks, this can reduce the time to sync with the network from days to minutes.
@@ -31,24 +31,24 @@ snapshot-interval = 2000
 snapshot-keep-recent = 5
 ```
 
-Our state-sync RPC server for andromeda is :
+Our state-sync RPC server for babylon is :
 ```
-https://rpc-andromeda.sxlzptprjkt.xyz:443
+https://rpc-babylon.sxlzptprjkt.xyz:443
 ```
 
 #### **Stop the service and reset the data**
 
 ```
-sudo systemctl stop andromedad
-cp $HOME/.andromedad/data/priv_validator_state.json $HOME/.andromedad/priv_validator_state.json.backup
-andromedad tendermint unsafe-reset-all --home $HOME/.andromedad --keep-addr-book
+sudo systemctl stop babylond
+cp $HOME/.babylond/data/priv_validator_state.json $HOME/.babylond/priv_validator_state.json.backup
+babylond tendermint unsafe-reset-all --home $HOME/.babylond --keep-addr-book
 ```
 
 #### **Configure state sync information**
 
 ```
-SNAP_RPC="https://rpc-andromeda.sxlzptprjkt.xyz:443"
-STATESYNC_PEERS="8870aca1936673bb2068ed07fcadc6c46d3ec3a1@146.190.83.6:22656"
+SNAP_RPC="https://rpc-babylon.sxlzptprjkt.xyz:443"
+STATESYNC_PEERS="4ffd7f9202c58df4afec210f22da732023e476c8@46.101.144.90:24656"
 
 LATEST_HEIGHT=$(curl -s $SNAP_RPC/block | jq -r .result.block.header.height); \
 BLOCK_HEIGHT=$((LATEST_HEIGHT - 2000)); \
@@ -57,14 +57,14 @@ TRUST_HASH=$(curl -s "$SNAP_RPC/block?height=$BLOCK_HEIGHT" | jq -r .result.bloc
 sed -i.bak -E "s|^(enable[[:space:]]+=[[:space:]]+).*$|\1true| ; \
 s|^(rpc_servers[[:space:]]+=[[:space:]]+).*$|\1\"$SNAP_RPC,$SNAP_RPC\"| ; \
 s|^(trust_height[[:space:]]+=[[:space:]]+).*$|\1$BLOCK_HEIGHT| ; \
-s|^(trust_hash[[:space:]]+=[[:space:]]+).*$|\1\"$TRUST_HASH\"|" $HOME/.andromedad/config/config.toml
-sed -i -e "s|^persistent_peers *=.*|persistent_peers = \"$STATESYNC_PEERS\"|" $HOME/.andromedad/config/config.toml
+s|^(trust_hash[[:space:]]+=[[:space:]]+).*$|\1\"$TRUST_HASH\"|" $HOME/.babylond/config/config.toml
+sed -i -e "s|^persistent_peers *=.*|persistent_peers = \"$STATESYNC_PEERS\"|" $HOME/.babylond/config/config.toml
 
-mv $HOME/.andromedad/priv_validator_state.json.backup $HOME/.andromedad/data/priv_validator_state.json
+mv $HOME/.babylond/priv_validator_state.json.backup $HOME/.babylond/data/priv_validator_state.json
 ```
 
 #### **Start service and check logs**
 
 ```
-sudo systemctl start andromedad && sudo journalctl -fu andromedad -o cat
+sudo systemctl start babylond && sudo journalctl -fu babylond -o cat
 ```

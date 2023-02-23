@@ -32,6 +32,12 @@
   * [State sync](./testnet/andromeda/statesync.md)
   * [Cheat sheet](./testnet/andromeda/cheatsheet.md)
 
+* [🟢 Babylon](./testnet/babylon/README.md)
+  * [Installation](./testnet/babylon/installation.md)
+  * [Upgrade](./testnet/babylon/upgrade.md)
+  * [State sync](./testnet/babylon/statesync.md)
+  * [Cheat sheet](./testnet/babylon/cheatsheet.md)
+
 * [🤝 Games Of Alliance](./testnet/goa/README.md)
   * [🟢 Ordos](./testnet/goa/ordos/README.md)
     * [Installation](./testnet/goa/ordos/installation.md)
