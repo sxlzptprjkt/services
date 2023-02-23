@@ -308,7 +308,7 @@ sudo systemctl disable babylond
 sudo rm /etc/systemd/system/babylond.service
 sudo systemctl daemon-reload
 rm -f $(which babylond)
-rm -rf $HOME/.core
+rm -rf $HOME/.babylond
 sed -i '/BBN_/d' ~/.bash_profile
 ```
 

@@ -306,7 +306,7 @@ sudo systemctl disable andromedad
 sudo rm /etc/systemd/system/andromedad.service
 sudo systemctl daemon-reload
 rm -f $(which andromedad)
-rm -rf $HOME/.core
+rm -rf $HOME/.andromedad
 sed -i '/ANDR_/d' ~/.bash_profile
 ```
 

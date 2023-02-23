@@ -302,7 +302,7 @@ sudo systemctl disable 8ball
 sudo rm /etc/systemd/system/8ball.service
 sudo systemctl daemon-reload
 rm -f $(which 8ball)
-rm -rf $HOME/.core
+rm -rf $HOME/.8ball
 sed -i '/EBL_/d' ~/.bash_profile
 ```
 
