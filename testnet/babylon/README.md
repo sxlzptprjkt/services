@@ -14,7 +14,7 @@ Babylon leverages cutting-edge cryptographic technologies and advanced Cosmos SD
 
 * RPC : [rpc-babylon.sxlzptprjkt.xyz](https://rpc-babylon.sxlzptprjkt.xyz)
 * API : [api-babylon.sxlzptprjkt.xyz](https://api-babylon.sxlzptprjkt.xyz)
-* gRPC : [grpc-babylon.sxlzptprjkt.xyz](https://grpc-babylon.sxlzptprjkt.xyz)
+* gRPC : `https://grpc-babylon.sxlzptprjkt.xyz:443`
 
 #### **Genesis**
 ```

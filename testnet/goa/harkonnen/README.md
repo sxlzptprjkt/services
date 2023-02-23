@@ -14,7 +14,7 @@ Alliance is an open-source Cosmos SDK module that leverages interchain staking t
 
 * RPC : [rpc-goa-harkonnen.sxlzptprjkt.xyz](https://rpc-goa-harkonnen.sxlzptprjkt.xyz)
 * API : [api-goa-harkonnen.sxlzptprjkt.xyz](https://api-goa-harkonnen.sxlzptprjkt.xyz)
-* gRPC : [grpc-goa-harkonnen.sxlzptprjkt.xyz](https://grpc-goa-harkonnen.sxlzptprjkt.xyz)
+* gRPC : `https://grpc-goa-harkonnen.sxlzptprjkt.xyz:443`
 
 #### **State Sync Peer**
 ```

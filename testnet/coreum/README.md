@@ -14,8 +14,7 @@ Coreum is a fast Layer-1 Blockchain with smart contract, set as a core infrastru
 
 * RPC : [rpc-coreum.sxlzptprjkt.xyz](https://rpc-coreum.sxlzptprjkt.xyz)
 * API : [api-coreum.sxlzptprjkt.xyz](https://api-coreum.sxlzptprjkt.xyz)
-* gRPC : [grpc-coreum.sxlzptprjkt.xyz](https://grpc-coreum.sxlzptprjkt.xyz)
-* gRPC WEB : [grpc-web-coreum.sxlzptprjkt.xyz](https://grpc-web-coreum.sxlzptprjkt.xyz)
+* gRPC : `https://grpc-coreum.sxlzptprjkt.xyz:443`
 
 #### **State Sync Peer**
 ```

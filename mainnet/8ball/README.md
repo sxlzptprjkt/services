@@ -14,7 +14,7 @@ N/A
 
 * RPC : [rpc-8ball.sxlzptprjkt.xyz](https://rpc-8ball.sxlzptprjkt.xyz)
 * API : [api-8ball.sxlzptprjkt.xyz](https://api-8ball.sxlzptprjkt.xyz)
-* gRPC : [grpc-8ball.sxlzptprjkt.xyz](https://grpc-8ball.sxlzptprjkt.xyz)
+* gRPC : `https://grpc-8ball.sxlzptprjkt.xyz:443`
 
 #### **State Sync Peer**
 ```

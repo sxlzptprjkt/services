@@ -14,7 +14,7 @@ Andromeda is an application platform layer that connects all public blockchains 
 
 * RPC : [rpc-andromeda.sxlzptprjkt.xyz](https://rpc-andromeda.sxlzptprjkt.xyz)
 * API : [api-andromeda.sxlzptprjkt.xyz](https://api-andromeda.sxlzptprjkt.xyz)
-* gRPC : [grpc-andromeda.sxlzptprjkt.xyz](https://grpc-andromeda.sxlzptprjkt.xyz)
+* gRPC : `https://grpc-andromeda.sxlzptprjkt.xyz:443`
 
 #### **Addrbook**
 ```

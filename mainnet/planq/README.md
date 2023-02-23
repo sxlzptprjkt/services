@@ -14,9 +14,8 @@ Planq's EVM infrastructure means that Ethereum-based smart contracts will run im
 
 * RPC : [rpc-planq.sxlzptprjkt.xyz](https://rpc-planq.sxlzptprjkt.xyz)
 * API : [api-planq.sxlzptprjkt.xyz](https://api-planq.sxlzptprjkt.xyz)
-* gRPC : [grpc-planq.sxlzptprjkt.xyz](https://grpc-planq.sxlzptprjkt.xyz)
-* RPC EVM : [rpc-evm-planq.sxlzptprjkt.xyz](https://rpc-evm-planq.sxlzptprjkt.xyz)
-* gRPC WEB : [grpc-web-planq.sxlzptprjkt.xyz](https://grpc-web-planq.sxlzptprjkt.xyz)
+* gRPC : `https://grpc-planq.sxlzptprjkt.xyz:443`
+* RPC EVM : `https://rpc-evm-planq.sxlzptprjkt.xyz`
 
 #### **Setting Networks For Metamask**
 - Chain Name : `Planq Mainnet`
