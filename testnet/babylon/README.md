@@ -16,9 +16,14 @@ Babylon leverages cutting-edge cryptographic technologies and advanced Cosmos SD
 * API : [api-babylon.sxlzptprjkt.xyz](https://api-babylon.sxlzptprjkt.xyz)
 * gRPC : `https://grpc-babylon.sxlzptprjkt.xyz:443`
 
+#### **Addrbook**
+```
+curl -Ls https://raw.githubusercontent.com/sxlzptprjkt/resource/master/testnet/babylon/addrbook.json > $HOME/.babylond/config/addrbook.json
+```
+
 #### **Genesis**
 ```
-curl -Ls https://raw.githubusercontent.com/sxlzptprjkt/resource/master/testnet/babylon/genesis.json > $HOME/.ordos/config/genesis.json
+curl -Ls https://raw.githubusercontent.com/sxlzptprjkt/resource/master/testnet/babylon/genesis.json > $HOME/.babylond/config/genesis.json
 ```
 
 #### **State Sync Peer**

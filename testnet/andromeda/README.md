@@ -18,12 +18,12 @@ Andromeda is an application platform layer that connects all public blockchains 
 
 #### **Addrbook**
 ```
-curl -Ls https://raw.githubusercontent.com/sxlzptprjkt/resource/master/testnet/andromeda/addrbook.json > $HOME/.ordos/config/addrbook.json
+curl -Ls https://raw.githubusercontent.com/sxlzptprjkt/resource/master/testnet/andromeda/addrbook.json > $HOME/.andromedad/config/addrbook.json
 ```
 
 #### **Genesis**
 ```
-curl -Ls https://raw.githubusercontent.com/sxlzptprjkt/resource/master/testnet/andromeda/genesis.json > $HOME/.ordos/config/genesis.json
+curl -Ls https://raw.githubusercontent.com/sxlzptprjkt/resource/master/testnet/andromeda/genesis.json > $HOME/.andromedad/config/genesis.json
 ```
 
 #### **State Sync Peer**
