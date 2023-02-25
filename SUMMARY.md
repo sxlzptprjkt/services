@@ -18,6 +18,12 @@
   * [State sync](./mainnet/8ball/statesync.md)
   * [Cheat sheet](./mainnet/8ball/cheatsheet.md)
 
+* [🟢 Arkhadian](./mainnet/arkhadian/README.md)
+  * [Installation](./mainnet/arkhadian/installation.md)
+  * [Upgrade](./mainnet/arkhadian/upgrade.md)
+  * [State sync](./mainnet/arkhadian/statesync.md)
+  * [Cheat sheet](./mainnet/arkhadian/cheatsheet.md)
+
 ## Testnet
 
 * [🟢 Coreum](./testnet/coreum/README.md)

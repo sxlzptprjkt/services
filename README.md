@@ -8,5 +8,6 @@
 |**[**Andromeda**](./testnet/andromeda/README.md)**|22|galileo-3|galileo-3-v1.1.0-beta1|
 |**[**8Ball**](./mainnet/8ball/README.md)**|23|eightball-1|v0.34.24|
 |**[**Babylon**](./testnet/babylon/README.md)**|24|bbn-test1|v0.5.0|
+|**[**Arkhadian**](./mainnet/arkhadian/README.md)**|25|arkh|v2.0.0|
 
 Regards ~ [sxlmnwb | sxlzptprjkt LLC](https://discord.com/users/890611401301835827)
