@@ -305,7 +305,7 @@ sudo rm -f /etc/systemd/system/planqd.service
 sudo systemctl daemon-reload
 rm -f $(which planqd)
 rm -rf $HOME/.planqd
-sed -i '/TESTCORE_/d' ~/.bash_profile
+sed -i '/PLANQ_/d' ~/.bash_profile
 ```
 
 ## Service Management
