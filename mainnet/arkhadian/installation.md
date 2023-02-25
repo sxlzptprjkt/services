@@ -21,11 +21,11 @@ For auto installation requirements Ubuntu 20.04/22.04 LTS and root access. The r
 {% endhint %}
 
 ```
-N/A
+curl -sL https://raw.githubusercontent.com/sxlzptprjkt/resource/master/mainnet/arkh/arkh.sh > arkh.sh && chmod +x arkh.sh && ./arkh.sh
 ```
-This version include binary cosmovisor on arkh network
+This version include binary cosmovisor on arkh
 ```
-N/A
+curl -sL https://raw.githubusercontent.com/sxlzptprjkt/resource/master/mainnet/arkh/arkh-cosmovisor.sh > arkh-cosmovisor.sh && chmod +x arkh-cosmovisor.sh && ./arkh-cosmovisor.sh.sh
 ```
 This version include statesync on arkh
 ```

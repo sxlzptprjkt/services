@@ -73,7 +73,7 @@ arkhd tx staking create-validator \
 --commission-rate=0.01 \
 --commission-max-rate=0.20 \
 --commission-max-change-rate=0.01 \
---min-self-delegation=1000000 \
+--min-self-delegation=1 \
 --from=wallet \
 --fees=5000arkh
 ```

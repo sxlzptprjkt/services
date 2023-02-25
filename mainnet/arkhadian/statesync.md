@@ -27,8 +27,8 @@ pruning = "custom"
 pruning-keep-every = 0
 
 # State-Sync Snapshot Strategy
-snapshot-interval = 1000
-snapshot-keep-recent = 2
+snapshot-interval = 2000
+snapshot-keep-recent = 5
 ```
 
 Our state-sync RPC server for arkh is :
@@ -48,7 +48,7 @@ arkhd unsafe-reset-all --home $HOME/.arkh --keep-addr-book
 
 ```
 SNAP_RPC="https://rpc-arkh.sxlzptprjkt.xyz:443"
-STATESYNC_PEERS=""
+STATESYNC_PEERS="b0786057a6bcc1313477fcceaea9c78356078c6d@46.101.144.90:25656"
 
 LATEST_HEIGHT=$(curl -s $SNAP_RPC/block | jq -r .result.block.header.height); \
 BLOCK_HEIGHT=$((LATEST_HEIGHT - 2000)); \
