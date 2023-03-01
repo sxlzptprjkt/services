@@ -32,6 +32,9 @@
 
 ## Testnet
 
+* [🟢 Nolus](./testnet/nolus/README.md)
+  * [Snapshot](./testnet/nolus/snapshot.md)
+
 * [🟢 Coreum](./testnet/coreum/README.md)
   * [Installation](./testnet/coreum/installation.md)
   * [Upgrade](./testnet/coreum/upgrade.md)
