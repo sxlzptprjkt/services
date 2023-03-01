@@ -27,8 +27,8 @@ pruning = "custom"
 pruning-keep-every = 0
 
 # State-Sync Snapshot Strategy
-snapshot-interval = 1000
-snapshot-keep-recent = 2
+snapshot-interval = 2000
+snapshot-keep-recent = 5
 ```
 
 Our state-sync RPC server for ordos is :
