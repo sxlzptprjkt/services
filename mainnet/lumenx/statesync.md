@@ -6,9 +6,9 @@ description: >-
 
 # State Sync
 
-<figure><img src="../../.gitbook/assets/arkh.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/lumenx.png" alt=""><figcaption></figcaption></figure>
 
-**Network:** Mainnet | **Chain ID:** arkh | **Version:** v2.0.0
+**Network:** Mainnet | **Chain ID:** LumenX | **Version:** v1.3.3
 
 {% hint style="info" %}
 State Sync allows a new node to join the network by fetching a snapshot of the application state at a recent height instead of fetching and replaying all historical blocks. Since the application state is generally much smaller than the blocks, and restoring it is much faster than replaying blocks, this can reduce the time to sync with the network from days to minutes.
@@ -31,24 +31,24 @@ snapshot-interval = 2000
 snapshot-keep-recent = 5
 ```
 
-Our state-sync RPC server for arkh is :
+Our state-sync RPC server for lumenx is :
 ```
-https://rpc-arkh.sxlzptprjkt.xyz:443
+https://rpc-lumenx.sxlzptprjkt.xyz:443
 ```
 
 #### **Stop the service and reset the data**
 
 ```
-sudo systemctl stop arkhd
-cp $HOME/.arkh/data/priv_validator_state.json $HOME/.arkh/priv_validator_state.json.backup
-arkhd unsafe-reset-all --home $HOME/.arkh
+sudo systemctl stop lumenxd
+cp $HOME/.lumenx/data/priv_validator_state.json $HOME/.lumenx/priv_validator_state.json.backup
+lumenxd tendermint unsafe-reset-all --home $HOME/.lumenx --keep-addr-book
 ```
 
 #### **Configure state sync information**
 
 ```
-SNAP_RPC="https://rpc-arkh.sxlzptprjkt.xyz:443"
-STATESYNC_PEERS="b0786057a6bcc1313477fcceaea9c78356078c6d@46.101.144.90:25656"
+SNAP_RPC="https://rpc-lumenx.sxlzptprjkt.xyz:443"
+STATESYNC_PEERS="39674b41ec5ffaf275977a147163c544e3fda03a@peers-lumenx.sxlzptprjkt.xyz:26656"
 
 LATEST_HEIGHT=$(curl -s $SNAP_RPC/block | jq -r .result.block.header.height); \
 BLOCK_HEIGHT=$((LATEST_HEIGHT - 2000)); \
@@ -57,14 +57,14 @@ TRUST_HASH=$(curl -s "$SNAP_RPC/block?height=$BLOCK_HEIGHT" | jq -r .result.bloc
 sed -i.bak -E "s|^(enable[[:space:]]+=[[:space:]]+).*$|\1true| ; \
 s|^(rpc_servers[[:space:]]+=[[:space:]]+).*$|\1\"$SNAP_RPC,$SNAP_RPC\"| ; \
 s|^(trust_height[[:space:]]+=[[:space:]]+).*$|\1$BLOCK_HEIGHT| ; \
-s|^(trust_hash[[:space:]]+=[[:space:]]+).*$|\1\"$TRUST_HASH\"|" $HOME/.arkh/config/config.toml
-sed -i -e "s|^persistent_peers *=.*|persistent_peers = \"$STATESYNC_PEERS\"|" $HOME/.arkh/config/config.toml
+s|^(trust_hash[[:space:]]+=[[:space:]]+).*$|\1\"$TRUST_HASH\"|" $HOME/.lumenx/config/config.toml
+sed -i -e "s|^persistent_peers *=.*|persistent_peers = \"$STATESYNC_PEERS\"|" $HOME/.lumenx/config/config.toml
 
-mv $HOME/.arkh/priv_validator_state.json.backup $HOME/.arkh/data/priv_validator_state.json
+mv $HOME/.lumenx/priv_validator_state.json.backup $HOME/.lumenx/data/priv_validator_state.json
 ```
 
 #### **Start service and check logs**
 
 ```
-sudo systemctl start arkhd && sudo journalctl -fu arkhd -o cat
+sudo systemctl start lumenxd && sudo journalctl -fu lumenxd -o cat
 ```

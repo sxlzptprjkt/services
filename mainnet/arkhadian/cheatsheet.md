@@ -286,7 +286,7 @@ sed -i -e "s/prometheus = false/prometheus = true/" $HOME/.arkh/config/config.to
 #### Reset chain data
 
 ```
-arkhd tendermint unsafe-reset-all --home $HOME/.arkh --keep-addr-book
+arkhd unsafe-reset-all --home $HOME/.arkh
 ```
 
 #### Remove node

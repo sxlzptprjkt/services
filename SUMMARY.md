@@ -24,6 +24,12 @@
   * [State sync](./mainnet/arkhadian/statesync.md)
   * [Cheat sheet](./mainnet/arkhadian/cheatsheet.md)
 
+* [🟢 Lumenx](./mainnet/lumenx/README.md)
+  * [Installation](./mainnet/lumenx/installation.md)
+  * [Upgrade](./mainnet/lumenx/upgrade.md)
+  * [State sync](./mainnet/lumenx/statesync.md)
+  * [Cheat sheet](./mainnet/lumenx/cheatsheet.md)
+
 ## Testnet
 
 * [🟢 Coreum](./testnet/coreum/README.md)
