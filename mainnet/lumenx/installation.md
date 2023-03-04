@@ -20,20 +20,20 @@ You can setup your lumenx validator in few minutes by using automated script bel
 For auto installation requirements Ubuntu 20.04/22.04 LTS and root access. The rest of the **RHEL family** doesn't support it
 {% endhint %}
 
-```
+```bash
 curl -sL https://raw.githubusercontent.com/sxlzptprjkt/resource/master/mainnet/lumenx/lumenx.sh > lumenx.sh && chmod +x lumenx.sh && ./lumenx.sh
 ```
 This version include binary cosmovisor on lumenx
-```
+```bash
 curl -sL https://raw.githubusercontent.com/sxlzptprjkt/resource/master/mainnet/lumenx/lumenx-cosmovisor.sh > lumenx-cosmovisor.sh && chmod +x lumenx-cosmovisor.sh && ./lumenx-cosmovisor.sh.sh
 ```
 This version include statesync on lumenx
-```
+```bash
 curl -sL https://raw.githubusercontent.com/sxlzptprjkt/resource/master/mainnet/lumenx/lumenx-statesync.sh > lumenx-statesync.sh && chmod +x lumenx-statesync.sh && ./lumenx-statesync.sh
 ```
 ## Post installation
 
 When installation is finished please load variables into system
-```
+```bash
 source $HOME/.bash_profile
 ```

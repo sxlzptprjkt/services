@@ -20,16 +20,20 @@ You can setup your planq validator in few minutes by using automated script belo
 For auto installation requirements Ubuntu 20.04/22.04 LTS and root access. The rest of the **RHEL family** doesn't support it
 {% endhint %}
 
-```
+```bash
 curl -sL https://raw.githubusercontent.com/sxlzptprjkt/resource/master/mainnet/planq/planq.sh > planq.sh && chmod +x planq.sh && ./planq.sh
 ```
 This version include binary cosmovisor on planq network
+```bash
+curl -sL https://raw.githubusercontent.com/sxlzptprjkt/resource/master/mainnet/planq/planq-cosmovisor.sh > planq-cosmovisor.sh && chmod +x planq-cosmovisor.sh && ./planq-cosmovisor.sh
 ```
-curl -sL https://raw.githubusercontent.com/sxlzptprjkt/resource/master/mainnet/planq/cosmovisor.sh > cosmovisor.sh && chmod +x cosmovisor.sh && ./cosmovisor.sh
+This version include statesync on planq network
+```bash
+curl -sL https://raw.githubusercontent.com/sxlzptprjkt/resource/master/mainnet/planq/planq-statesync.sh > planq-statesync.sh && chmod +x planq-statesync.sh && ./planq-statesync.sh
 ```
 ## Post installation
 
 When installation is finished please load variables into system
-```
+```bash
 source $HOME/.bash_profile
 ```

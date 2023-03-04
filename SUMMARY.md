@@ -7,6 +7,8 @@
 * [🟢 Planq](./mainnet/planq/README.md)
   * [Installation](./mainnet/planq/installation.md)
   * [Upgrade](./mainnet/planq/upgrade.md)
+  * [State sync](./mainnet/planq/statesync.md)
+  * [Monitoring](./mainnet/planq/monitoring.md)
   * [Cheat sheet](./mainnet/planq/cheatsheet.md)
 
 * [🟢 Osmosis](./mainnet/osmosis/README.md)
