@@ -55,6 +55,12 @@
   * [State sync](./testnet/babylon/statesync.md)
   * [Cheat sheet](./testnet/babylon/cheatsheet.md)
 
+* [🟢 Sao](./testnet/sao/README.md)
+  * [Installation](./testnet/sao/installation.md)
+  * [Upgrade](./testnet/sao/upgrade.md)
+  * [State sync](./testnet/sao/statesync.md)
+  * [Cheat sheet](./testnet/sao/cheatsheet.md)
+
 * [🤝 Games Of Alliance](./testnet/goa/README.md)
   * [🟢 Ordos](./testnet/goa/ordos/README.md)
     * [Installation](./testnet/goa/ordos/installation.md)

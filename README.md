@@ -10,5 +10,6 @@
 |**[**Babylon**](./testnet/babylon/README.md)**|24|bbn-test1|v0.5.0|
 |**[**Arkhadian**](./mainnet/arkhadian/README.md)**|25|arkh|v2.0.0|
 |**[**Lumenx**](./mainnet/lumenx/README.md)**|26|LumenX|v1.3.3|
+|**[**SAO Network**](./testnet/sao/README.md)**|27|sao-testnet0|testnet0|
 
 Regards ~ [sxlmnwb | sxlzptprjkt LLC](https://discord.com/users/890611401301835827)
