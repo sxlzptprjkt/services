@@ -7,7 +7,7 @@ description: >-
 
 <figure><img src="../../.gitbook/assets/planq.png" alt=""><figcaption></figcaption></figure>
 
-**Network:** Mainnet | **Chain ID:** planq_7070-2 | **Version:** v1.0.3
+**Network:** Mainnet | **Chain ID:** planq_7070-2 | **Version:** v1.0.4
 
 ## Key management
 
