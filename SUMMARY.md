@@ -79,3 +79,11 @@
     * [State sync](./testnet/goa/atreides/statesync.md)
     * [Cheat sheet](./testnet/goa/atreides/cheatsheet.md)
   * [🛠 Upgrade](./testnet/goa/upgrade.md)
+
+## Devnet
+
+* [🟢 Ojo](./devnet/ojo/README.md)
+  * [Installation](./devnet/ojo/installation.md)
+  * [Upgrade](./devnet/ojo/upgrade.md)
+  * [State sync](./devnet/ojo/statesync.md)
+  * [Cheat sheet](./devnet/ojo/cheatsheet.md)
