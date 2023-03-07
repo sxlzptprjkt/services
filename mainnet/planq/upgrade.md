@@ -6,7 +6,7 @@ description: Prepare for and the upcomming chain upgrade using Cosmovisor.
 
 <figure><img src="../../.gitbook/assets/planq.png" alt=""><figcaption></figcaption></figure>
 
-**Network:** Mainnet | **Chain ID:** planq_7070-2 | **Version:** v1.0.4
+**Network:** Mainnet | **Chain ID:** planq_7070-2 | **Version:** v1.0.5
 
 {% hint style="info" %}
 Since we are using Cosmovisor, it makes it very easy to prepare for upcomming upgrade. You just have to build new binaries and move it into cosmovisor upgrades directory.
@@ -14,7 +14,7 @@ Since we are using Cosmovisor, it makes it very easy to prepare for upcomming up
 
 | Executable | Node Version |
 | ----| ------------ |
-| **planqd**|v1.0.3 > v1.0.4|
+| **planqd**|v1.0.4 > v1.0.5|
 
 {% hint style="info" %}
 if you get an error looking at logs on nodes try updating available new version.
@@ -56,7 +56,7 @@ cd $HOME
 rm -rf planq
 git clone https://github.com/planq-network/planq
 cd planq
-git checkout v1.0.4
+git checkout v1.0.5
 make install
 ```
 

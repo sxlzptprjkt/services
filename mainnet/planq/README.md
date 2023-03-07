@@ -2,11 +2,13 @@
 
 <figure><img src="../../.gitbook/assets/planq.png" alt=""><figcaption></figcaption></figure>
 
-**Network:** Mainnet | **Chain ID:** planq_7070-2 | **Version:** v1.0.4
+**Network:** Mainnet | **Chain ID:** planq_7070-2 | **Version:** v1.0.5
 
 {% hint style="info" %}
 Planq is a proof-of-stake (PoS) network that enables value transfer between Ethereum and Cosmos ecosystems. It is developed using the Cosmos software development kit (SDK). Developers can seamlessly leverage Planq to run Ethereum smart contracts on app-specific Cosmos networks. In addition, the Cosmos Inter-Blockchain Communication (IBC) protocol empowers Planq to link decentralized applications (dApps) on various blockchains and benefit from joint liquidity and value transfer. Planq makes use of Tendermint Core's Byzantine Fault Tolerance to distinguish itself from other network application layers.
 {% endhint %}
+
+[**Website**](https://planq.network) | [**Discord**](https://discord.gg/planq-network) | [**Twitter**](https://twitter.com/PlanqFoundation)
 
 #### **Explorers** : [explorer.sxlzptprjkt.xyz/planq](https://explorer.sxlzptprjkt.xyz/planq)
 
