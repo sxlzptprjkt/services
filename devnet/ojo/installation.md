@@ -11,7 +11,7 @@ description: >-
 **Network:** Devnet | **Chain ID:** ojo-devnet | **Version:** v0.1.2
 
 ## Set up your ojo Validator
-### (automatic)
+
 The auto installation include snapshots or statesync any provider.
 
 You can setup your ojo validator in few minutes by using automated script below. It will prompt you to input your validator node name!

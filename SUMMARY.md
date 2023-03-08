@@ -84,6 +84,7 @@
 
 * [🟢 Ojo](./devnet/ojo/README.md)
   * [Installation](./devnet/ojo/installation.md)
+  * [Price Feeder](./devnet/ojo/pricefeeder.md)
   * [Upgrade](./devnet/ojo/upgrade.md)
   * [State sync](./devnet/ojo/statesync.md)
   * [Cheat sheet](./devnet/ojo/cheatsheet.md)
