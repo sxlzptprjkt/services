@@ -70,9 +70,9 @@ planqd tx staking create-validator \
 --details="YOUR_DETAILS" \
 --website="YOUR_WEBSITE_URL" \
 --chain-id=planq_7070-2 \
---commission-rate=0.01 \
+--commission-rate=0.04 \
 --commission-max-rate=0.20 \
---commission-max-change-rate=0.01 \
+--commission-max-change-rate=0.10 \
 --min-self-delegation=1000000 \
 --from=wallet \
 --gas="1000000" \
