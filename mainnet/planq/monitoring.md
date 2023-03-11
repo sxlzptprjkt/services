@@ -14,4 +14,4 @@ Grafana and Prometheus are open-source monitoring tools that are often used toge
 
 ### sxlzptprjkt LLC Monitoring Dashboard
 
-- Grafana : [grafana.sxlzptprjkt.xyz/d/18/planq-network](https://grafana.sxlzptprjkt.xyz/d/18/planq-network)
+- Grafana : [grafana.sxlzptprjkt.xyz/d/18/planq-network](https://grafana.sxlzptprjkt.xyz/d/18/planq-network?var-chain_id=planq_7070-2)
